@@ -1,7 +1,9 @@
-require 'font'
+require 'tipo'
+
+include Tipo
 
 describe Font do
-  let(:font) { Font.new 'spec/hobo.otf' }
+  let(:font) { Font.new 'spec/fixtures/hobo.otf' }
   it "reads a file as ascii-8bit" do
     font.encoding.should eq Encoding::ASCII_8BIT
   end

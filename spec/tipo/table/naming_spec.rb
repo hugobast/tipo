@@ -1,9 +1,10 @@
-require_relative '../font'
-require_relative '../header'
-require_relative '../naming'
+require 'tipo'
+
+include Tipo
+include Table
 
 describe Naming do
-  let(:font) { Font.new 'spec/hobo.otf' }
+  let(:font) { Font.new 'spec/fixtures/hobo.otf' }
   let(:header) { Header.new font }
   let(:name) { Naming.new header, font }
 

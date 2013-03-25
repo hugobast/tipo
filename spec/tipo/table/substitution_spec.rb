@@ -1,9 +1,10 @@
-require_relative '../font'
-require_relative '../header'
-require_relative '../substitution'
+require 'tipo'
+
+include Tipo
+include Table
 
 describe Substitution do
-  let(:font) { Font.new 'spec/hobo.otf' }
+  let(:font) { Font.new 'spec/fixtures/hobo.otf' }
   let(:header) { Header.new font }
   let(:gsub) { Substitution.new header, font }
 

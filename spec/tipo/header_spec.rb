@@ -1,9 +1,10 @@
-require_relative '../font'
-require_relative '../header'
+require 'tipo'
+
+include Tipo
 
 describe Header do
   context "contains the information located in the header" do
-    let(:font) { Font.new 'spec/hobo.otf' }
+    let(:font) { Font.new 'spec/fixtures/hobo.otf' }
     let(:header) { Header.new font }
 
     it "reads the offset table" do

@@ -1,11 +1,12 @@
-require_relative '../font'
-require_relative '../header'
-require_relative '../table'
+require 'tipo'
 
-describe Table do
-  let(:font) { Font.new 'spec/hobo.otf' }
+include Tipo
+include Table
+
+describe Base do
+  let(:font) { Font.new 'spec/fixtures/hobo.otf' }
   let(:header) { Header.new font }
-  let(:table) { Table.new header, font }
+  let(:table) { Base.new header, font }
 
   context "navigating" do
     it "has a name" do
