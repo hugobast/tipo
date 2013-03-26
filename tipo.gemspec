@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hugobast@gmail.com"]
   spec.description   = %q{Pure Ruby OpenType font file reader}
   spec.summary       = %q{Incomplete implementation: Reads header tables, GSUB table and name table}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/hugobast/tipo"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
