@@ -1,6 +1,6 @@
 # Tipo
 
-[![Code Climate](https://codeclimate.com/github/hugobast/tipo.png)](https://codeclimate.com/github/hugobast/tipo)
+[![Code Climate](https://codeclimate.com/github/hugobast/tipo.png)](https://codeclimate.com/github/hugobast/tipo) [![Build Status](https://travis-ci.org/hugobast/tipo.png?branch=master)](https://travis-ci.org/hugobast/tipo)
 
 This is very early work but Tipo is meant to be a pure ruby OpenType and TrueType font format reader. Support for more tables and information to come.
 
