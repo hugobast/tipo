@@ -23,7 +23,7 @@ Or install it yourself as:
 Very narrow interface:
 
 ```ruby
-info = Tipo.info 'path/to/font.{otf|ttf}
+info = Tipo.info 'path/to/font.{otf|ttf}'
 info.naming.font   # => "Font Name"
 info.naming.style  # => "Italic"
 
