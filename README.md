@@ -1,6 +1,8 @@
 # Tipo
 
-TODO: Write a gem description
+[![Code Climate](https://codeclimate.com/github/hugobast/tipo.png)](https://codeclimate.com/github/hugobast/tipo)
+
+This is very early work but Tipo is meant to be a pure ruby OpenType and TrueType font format reader. Support for more tables and information to come.
 
 ## Installation
 
@@ -18,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Very narrow interface:
+
+```ruby
+info = Tipo.info 'path/to/font.{otf|ttf}
+info.naming.font   # => "Font Name"
+info.naming.style  # => "Italic"
+
+info.substitution.feature_list.map do |feature|
+  feature.tag
+end.uniq           # => ['aalt', 'dlig', 'liga' ... ]
+```
 
 ## Contributing
 
